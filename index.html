@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfolio Data Analyst et développeur Python : projets data, scientifiques et jeux.">
+  <title>Ludovic ZINGG | Data Analyst & Docteur en Mécanique des Matériaux</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/script.js" defer></script>
+</head>
+<body>
+  <div class="noise"></div>
+
+  <header class="site-header">
+    <a class="brand" href="index.html">
+      <span class="brand-mark">&gt;_</span>
+      <span>Ludovic Zingg</span>
+    </a>
+
+    <button class="menu-toggle" aria-label="Ouvrir le menu" aria-expanded="false">☰</button>
+
+    <nav class="main-nav">
+      <a class="active" href="index.html">Accueil</a>
+      <a href="sciences-data.html">Sciences & Data</a>
+      <a href="jeux.html">Jeux</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero container reveal">
+      <div class="hero-copy">
+        <p class="eyebrow">PORTFOLIO · DATA · PYTHON · ANALYSE</p>
+        <h1>Transformer des données et des idées en <span class="accent">solutions concrètes.</span></h1>
+        <p class="hero-text">
+          Je suis Ludovic Zingg, Data Analyst et docteur en mécanique des matériaux. J'aime analyser, modéliser,
+          automatiser et construire des projets où la logique, la donnée et l'expérimentation
+          prennent une forme claire et utile.
+        </p>
+        <p class="hero-text">
+          Ce site a pour but de me présenter mais aussi de présenter mes nombreux projets personnels Pythons.
+        </p>
+
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="sciences-data.html">Voir mes projets</a>
+          <a class="btn btn-secondary" href="contact.html">Me contacter</a>
+        </div>
+
+        <div class="quick-links">
+          <a href="https://github.com/" target="_blank" rel="noreferrer">GitHub ↗</a>
+          <a href="https://www.linkedin.com/" target="_blank" rel="noreferrer">LinkedIn ↗</a>
+          <a href="assets/cv/CV_Ludo_Zingg.pdf" target="_blank">CV ↗</a>
+        </div>
+      </div>
+
+      <aside class="hero-panel">
+        <div class="terminal">
+          <div class="terminal-top">
+            <span></span><span></span><span></span>
+            <small>profile.py</small>
+          </div>
+          <pre><code><span class="code-purple">class</span> <span class="code-blue">Profil</span>:
+    nom = <span class="code-green">"Ludovic Zingg"</span>
+    role = <span class="code-green">"Data Analyst"</span>
+
+    competences = [
+        <span class="code-green">"Python"</span>,
+        <span class="code-green">"Pandas"</span>,
+        <span class="code-green">"SQL"</span>,
+        <span class="code-green">"Data Viz"</span>,
+        <span class="code-green">"Data Warehouse"</span>
+        <span class="code-green">"Machine Learning"</span>
+        <span class="code-green">"Algorithmique"</span>        
+        <span class="code-green">"Interface Tkinter"</span>
+        <span class="code-green">"Interface Pygame"</span>
+    ]
+
+    def objectif(self):
+        return <span class="code-green">"Comprendre → Analyser → Construire"</span></code></pre>
+        </div>
+      </aside>
+    </section>
+
+    <section class="stats container reveal">
+      <div><strong>Python</strong><span>Analyse & applications</span></div>
+      <div><strong>Data</strong><span>Nettoyage & visualisation</span></div>
+      <div><strong>Sciences</strong><span>Modélisation & algorithmes</span></div>
+      <div><strong>Jeux</strong><span>Logique & interfaces</span></div>
+    </section>
+
+    <section class="section container reveal">
+      <div class="section-heading">
+        <p class="eyebrow">À PROPOS</p>
+        <h2>Un profil à la frontière entre analyse et développement.</h2>
+      </div>
+
+      <div class="about-grid">
+        <div class="glass-card">
+          <p>
+              Le métier de Data Analyst consiste à partir d'un problème concret, à analyser les besoins des équipes de travail, à rassembler, nettoyer et organiser les données, 
+            pour produire des visuels adaptées afin d'aider les décideurs, faire des recommandations et communiquer des informations pertinentes.<br>
+              Pour mes projets personnels j'endosse la casquette de développeur pour coder des jeux de plateaux existant, 
+            et à vulgariser ou modéliser des phénomène physiques, ou mathématiques.
+          </p>
+        </div>
+
+        <div class="skills-card">
+          <span>Python</span><span>Pandas</span><span>NumPy</span><span>SQL</span>
+          <span>Matplotlib</span><span>Excel</span><span>Power BI</span><span>Tkinter</span>
+          <span>POO</span><span>Git</span><span>Analyse statistique</span><span>Algorithmique</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section container reveal">
+      <div class="section-heading split-heading">
+        <div>
+          <p class="eyebrow">MES UNIVERS</p>
+          <h2>Trois façons de montrer ce que je sais faire.</h2>
+        </div>
+      </div>
+
+      <div class="universe-grid">
+        <a class="universe-card data-card" href="sciences-data.html#data">
+          <span class="card-index">01</span>
+          <h3>Data & Analyse</h3>
+          <p>Exploration, nettoyage, indicateurs, visualisation et restitution.</p>
+          <span class="arrow">Découvrir →</span>
+        </a>
+
+        <a class="universe-card science-card" href="sciences-data.html#sciences">
+          <span class="card-index">02</span>
+          <h3>Sciences & Algorithmes</h3>
+          <p>Simulation, modélisation, logique, et résolution de problèmes.</p>
+          <span class="arrow">Découvrir →</span>
+        </a>
+
+        <a class="universe-card game-card" href="jeux.html">
+          <span class="card-index">03</span>
+          <h3>Jeux & Applications</h3>
+          <p>Interfaces Python, puzzles, prototypes jouables et systèmes interactifs.</p>
+          <span class="arrow">Découvrir →</span>
+        </a>
+      </div>
+    </section>
+
+    <section class="section container reveal">
+      <div class="section-heading">
+        <p class="eyebrow">PROJETS EN AVANT</p>
+        <h2>Quelques réalisations à présenter en entretien.</h2>
+      </div>
+
+      <div class="featured-grid">
+        <article class="project-card">
+          <div class="project-visual visual-data">
+            <span>DATA / DASHBOARD</span>
+          </div>
+          <div class="project-body">
+            <div class="tags"><span>Python</span><span>Pandas</span><span>Data Viz</span></div>
+            <h3>Analyse des retards TGV</h3>
+            <p>Analyse exploratoire et interface de visualisation des retards par ligne, mois et année.</p>
+            <a href="sciences-data.html#projet-tgv">Voir le projet →</a>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-visual visual-science">
+            <span>ALGORITHMES</span>
+          </div>
+          <div class="project-body">
+            <div class="tags"><span>Python</span><span>Logique</span><span>Simulation</span></div>
+            <h3>Projet scientifique / algorithmique</h3>
+            <p>Un emplacement prêt pour présenter une simulation ou un problème scientifique résolu en Python.</p>
+            <a href="sciences-data.html#projet-science">Voir le projet →</a>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-visual visual-game">
+            <span>GAME / PYTHON</span>
+          </div>
+          <div class="project-body">
+            <div class="tags"><span>Python</span><span>Tkinter</span><span>POO</span></div>
+            <h3>Puzzle & jeu Python</h3>
+            <p>Déplacement de pièces, interactions souris, règles de victoire et interface graphique.</p>
+            <a href="jeux.html#puzzle">Voir le projet →</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="cta container reveal">
+      <div>
+        <p class="eyebrow">DISCUTONS</p>
+        <h2>Vous cherchez un profil curieux, analytique et à l'aise avec Python ?</h2>
+      </div>
+      <a class="btn btn-primary" href="contact.html">Prendre contact</a>
+    </section>
+  </main>
+
+  <footer class="site-footer container">
+    <p>© <span id="year"></span> Ludo Zingg — Portfolio Data & Python</p>
+    <div>
+      <a href="https://github.com/" target="_blank" rel="noreferrer">GitHub</a>
+      <a href="https://www.linkedin.com/" target="_blank" rel="noreferrer">LinkedIn</a>
+    </div>
+  </footer>
+</body>
+</html>
