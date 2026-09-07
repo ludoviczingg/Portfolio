@@ -60,7 +60,6 @@
           <div class="video-label">VIDÉO DE DÉMONSTRATION</div>
           <div class="video-placeholder">
             <div>
-              <strong>▶</strong>
               <iframe
                 src="https://www.youtube.com/embed/EwyXR23AghM"
                 title="Démonstration du projet"
@@ -112,8 +111,82 @@
             </p>
           </div>
         </div>
+      </article>
+      
+      
 
-        
+      <article class="project-detail reveal" id="projet-labo_elec">
+        <div class="project-detail-head">
+          <div>
+            <p class="project-number">PROJET 01</p>
+            <h2>Laboratoire d'électrostatique</h2>
+            <p class="lead">
+              Petit laboratoire simulant le lancer de particules chargées dans un champ électrique.
+            </p>
+          </div>
+          <div class="tags large-tags">
+            <span>Python</span><span>Pandas</span><span>Tkinter</span><span>Matplotlib</span>
+          </div>
+        </div>
+
+        <div class="video-shell">
+          <div class="video-label">VIDÉO DE DÉMONSTRATION</div>
+          <div class="video-placeholder">
+            <div>
+              <strong>▶</strong>
+              <iframe
+                src="https://www.youtube.com/embed/zeYHQWroYsc"
+                title="Démonstration du projet"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen>
+              </iframe>
+            </div>
+          </div>
+          <!-- Exemple YouTube :
+          <iframe
+              src="https://www.youtube.com/embed/TON_ID_VIDEO"
+              title="Démonstration du projet"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen>
+          </iframe>
+          -->
+        </div>
+
+        <div class="project-columns">
+          <div class="content-block">
+            <h3>Le contexte</h3>
+            <p>
+              Avec une interface tkinter on peux placer des charges électriques en visualisant les lignes de champs et les valeurs du champs a chaque point.
+              On peut aussi place run autre particule chargé et lui donner une impulsion pour visualiser sa trajectoire dans le champ. 
+              Il est également possible d'intégrer un champ magnétique uniforme. C'est donc ici une application éducative.
+            </p>
+          </div>
+
+          <div class="content-block">
+            <h3>Ce que j'ai développé</h3>
+            <p>
+              J'ai utilisé l'interface tkinter. L'architecture choisie est de d'abord tout calculer avant d'animer. Cela permet de faire pause et de se promener sur la trajectoire pour visulaliser les valeurs de force, et de vitesses,
+              et cela pemret d'éviter de gérer les pas de temps de simulation et d'animation en même temps. 
+            </p>
+          </div>
+
+          <div class="content-block">
+            <h3>Points techniques</h3>
+            <ul>
+              <li>Apprentissage approfondi de la la librairie math</li>
+              <li>Comprendre les problèmes liés aux singularités, qui numériquement provoque des crashs</li>
+              <li>Décider de comment aborder la simulation d'un problème de physique complexe</li>
+            </ul>
+          </div>
+
+          <div class="content-block">
+            <h3>Ce que le projet démontre</h3>
+            <p>
+              Ma capacité à comprendre la théorie d'un phénomène physique complexe, le transcrire numériquement et l'intégrer à une interface interactive.
+            </p>
+          </div>
+        </div>
+
       </article>
 
       <article class="project-detail reveal">
