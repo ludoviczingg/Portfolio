@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Jeux, puzzles et applications Python développés par Ludo Zingg.">
+  <title>Jeux & Applications | Ludo Zingg</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/script.js" defer></script>
+</head>
+<body>
+  <div class="noise"></div>
+
+  <header class="site-header">
+    <a class="brand" href="index.html"><span class="brand-mark">&gt;_</span><span>Ludo Zingg</span></a>
+    <button class="menu-toggle" aria-label="Ouvrir le menu" aria-expanded="false">☰</button>
+    <nav class="main-nav">
+      <a href="index.html">Accueil</a>
+      <a href="sciences-data.html">Sciences & Data</a>
+      <a class="active" href="jeux.html">Jeux</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="page-hero container reveal">
+      <p class="eyebrow">PORTFOLIO / 02</p>
+      <h1>Jeux <span class="accent">&</span> Applications</h1>
+      <p>
+        Mes projets ludiques me permettent de travailler la programmation orientée objet,
+        les interfaces graphiques, les interactions utilisateur et les algorithmes.
+      </p>
+    </section>
+
+    <section class="section container">
+      <article class="project-detail reveal" id="puzzle">
+        <div class="project-detail-head">
+          <div>
+            <p class="project-number">GAME 01</p>
+            <h2>Puzzle de pièces type Tetris</h2>
+            <p class="lead">
+              Un puzzle interactif en Python avec déplacement de pièces multi-cases,
+              gestion des collisions et validation de la solution.
+            </p>
+          </div>
+          <div class="tags large-tags">
+            <span>Python</span><span>Tkinter</span><span>POO</span><span>Algorithmique</span>
+          </div>
+        </div>
+
+        <div class="video-shell">
+          <div class="video-label">GAMEPLAY / DÉMONSTRATION</div>
+          <div class="video-placeholder game-video">
+            <div>
+              <strong>▶</strong>
+              <p>Insère ici une courte vidéo du puzzle</p>
+              <small>30 à 90 secondes suffisent largement</small>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-columns">
+          <div class="content-block">
+            <h3>Concept</h3>
+            <p>
+              Le joueur sélectionne et déplace des pièces composées de plusieurs cellules
+              afin de les positionner correctement sur un plateau.
+            </p>
+          </div>
+
+          <div class="content-block">
+            <h3>Architecture</h3>
+            <p>
+              Séparation de la logique de jeu, des objets représentant les pièces et de
+              l'interface graphique pour garder un code plus maintenable.
+            </p>
+          </div>
+
+          <div class="content-block">
+            <h3>Difficultés techniques</h3>
+            <ul>
+              <li>Sélection d'une pièce avec la souris</li>
+              <li>Déplacement cohérent de formes multi-cases</li>
+              <li>Détection des collisions et limites du plateau</li>
+              <li>Gestion des images Tkinter et rafraîchissement du canvas</li>
+            </ul>
+          </div>
+
+          <div class="content-block">
+            <h3>Ce que j'ai appris</h3>
+            <p>
+              Structuration d'un système interactif, gestion d'état, événements souris,
+              coordonnées écran/grille et débogage d'une interface graphique complexe.
+            </p>
+          </div>
+        </div>
+
+        <div class="project-links">
+          <a class="btn btn-primary" href="https://github.com/" target="_blank" rel="noreferrer">Voir le code GitHub ↗</a>
+        </div>
+      </article>
+
+      <article class="project-detail reveal">
+        <div class="project-detail-head">
+          <div>
+            <p class="project-number">GAME 02</p>
+            <h2>Pipe Puzzle</h2>
+            <p class="lead">
+              Un puzzle reposant sur la rotation d'éléments et la vérification automatique
+              d'une configuration gagnante.
+            </p>
+          </div>
+          <div class="tags large-tags">
+            <span>Python</span><span>Tkinter</span><span>Logique</span>
+          </div>
+        </div>
+
+        <div class="video-shell compact-video">
+          <div class="video-placeholder">
+            <div><strong>▶</strong><p>Ajoute ici une vidéo du puzzle</p></div>
+          </div>
+        </div>
+
+        <div class="project-columns">
+          <div class="content-block"><h3>Gameplay</h3><p>Explique ici le principe du puzzle et la règle de victoire.</p></div>
+          <div class="content-block"><h3>Algorithme</h3><p>Présente la logique de rotation, les connexions et la vérification de solution.</p></div>
+          <div class="content-block"><h3>Interface</h3><p>Montre comment les clics, images et états du plateau sont gérés.</p></div>
+          <div class="content-block"><h3>Améliorations</h3><p>Décris les fonctionnalités que tu aimerais ajouter.</p></div>
+        </div>
+      </article>
+
+      <article class="project-detail reveal">
+        <div class="project-detail-head">
+          <div>
+            <p class="project-number">GAME 03</p>
+            <h2>Ton prochain jeu</h2>
+            <p class="lead">
+              Ce troisième bloc est prêt à être remplacé par un autre jeu, prototype ou application.
+            </p>
+          </div>
+          <div class="tags large-tags">
+            <span>Python</span><span>Game Design</span>
+          </div>
+        </div>
+
+        <div class="video-shell compact-video">
+          <div class="video-placeholder">
+            <div><strong>+</strong><p>Vidéo, GIF ou captures</p></div>
+          </div>
+        </div>
+
+        <div class="project-columns">
+          <div class="content-block"><h3>Idée</h3><p>Quel était le concept de départ ?</p></div>
+          <div class="content-block"><h3>Développement</h3><p>Comment as-tu organisé le code et les mécaniques ?</p></div>
+          <div class="content-block"><h3>Défis</h3><p>Quels problèmes intéressants as-tu rencontrés ?</p></div>
+          <div class="content-block"><h3>Bilan</h3><p>Qu'est-ce que ce projet t'a appris ?</p></div>
+        </div>
+      </article>
+    </section>
+  </main>
+
+  <footer class="site-footer container">
+    <p>© <span id="year"></span> Ludo Zingg — Portfolio Data & Python</p>
+    <div><a href="index.html">Accueil</a><a href="contact.html">Contact</a></div>
+  </footer>
+</body>
+</html>
