@@ -1096,17 +1096,18 @@ img {
    VIDEO
    ========================================================= */
 
+
+
 .video-shell {
+    width: 100%;
     overflow: hidden;
 
     margin: 18px 0 28px;
 
     border: 1px solid var(--line);
-
     border-radius: 16px;
 
-    background:
-        #05101c;
+    background: #05101c;
 }
 
 .video-label {
@@ -1116,18 +1117,36 @@ img {
 
     color: var(--muted);
 
-    font-family:
-        "JetBrains Mono",
-        monospace;
+    font-family: "JetBrains Mono", monospace;
 
     font-size: 0.7rem;
 
     letter-spacing: 0.09em;
 }
 
+/* Conteneur de la vidéo */
 .video-placeholder {
+    width: 100%;
+
+    padding: 0;
+
+    background: #000;
+}
+
+/* Lecteur YouTube */
+.video-placeholder iframe {
+    display: block;
+
+    width: 100%;
     aspect-ratio: 16 / 9;
 
+    height: auto;
+
+    border: 0;
+}
+
+/* Vidéos sans iframe : emplacement temporaire */
+.video-placeholder > div:not(:has(iframe)) {
     min-height: 300px;
 
     display: grid;
@@ -1135,6 +1154,8 @@ img {
     place-items: center;
 
     text-align: center;
+
+    padding: 30px;
 
     background:
         radial-gradient(
@@ -1149,6 +1170,7 @@ img {
         );
 }
 
+/* Variante pour les jeux */
 .game-video {
     background:
         radial-gradient(
@@ -1163,55 +1185,8 @@ img {
         );
 }
 
-.video-placeholder strong {
-    width: 68px;
-    height: 68px;
-
-    margin: 0 auto 12px;
-
-    display: grid;
-
-    place-items: center;
-
-    border: 1px solid rgba(84, 230, 255, 0.25);
-
-    border-radius: 50%;
-
-    color: var(--cyan);
-
-    font-size: 1.45rem;
-
-    background:
-        rgba(84, 230, 255, 0.06);
-}
-
-.video-placeholder p,
-.video-placeholder small {
-    display: block;
-
-    margin: 0;
-
-    color: var(--muted);
-}
-
-.video-placeholder small {
-    margin-top: 5px;
-
-    font-size: 0.76rem;
-}
-
-.video-shell iframe {
-    width: 100%;
-
-    aspect-ratio: 16 / 9;
-
-    display: block;
-
-    border: 0;
-}
-
 .compact-video .video-placeholder {
-    min-height: 230px;
+    min-height: 0;
 }
 
 
