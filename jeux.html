@@ -64,14 +64,6 @@
               </iframe>
             </div>
           </div>
-          <!-- Exemple YouTube :
-          <iframe
-              src="https://www.youtube.com/embed/TON_ID_VIDEO"
-              title="Démonstration du projet"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowfullscreen>
-          </iframe>
-          -->
         </div>
 
         <div class="project-columns">
@@ -112,104 +104,232 @@
             </p>
           </div>
         </div>
-
       </article>
 
-      <article class="project-detail reveal" id="puzzle">
+
+
+
+
+
+
+      <article class="project-detail reveal" id="Ciudalia">
         <div class="project-detail-head">
           <div>
-            <p class="project-number">GAME 01</p>
-            <h2>Puzzle de pièces type Tetris</h2>
+            <p class="game-number">JEU 02</p>
+            <h2>Ciudalia : la cité des complots</h2>
             <p class="lead">
-              Un puzzle interactif en Python avec déplacement de pièces multi-cases,
-              gestion des collisions et validation de la solution.
+              Ciudalia est un jeu complexe de stratégie et placement de dés. Ce code est aussi un tournant majeur dans ma manière de développer des jeux.
             </p>
           </div>
           <div class="tags large-tags">
-            <span>Python</span><span>Tkinter</span><span>POO</span><span>Algorithmique</span>
+            <span>Python</span><span>Pandas</span><span>Tkinter</span><span>Matplotlib</span>
           </div>
         </div>
 
         <div class="video-shell">
-          <div class="video-label">GAMEPLAY / DÉMONSTRATION</div>
-          <div class="video-placeholder game-video">
+          <div class="video-label">VIDÉO DE DÉMONSTRATION</div>
+          <div class="video-placeholder">
             <div>
-              <strong>▶</strong>
-              <p>Insère ici une courte vidéo du puzzle</p>
-              <small>30 à 90 secondes suffisent largement</small>
+              <iframe
+                src="https://www.youtube.com/embed/8cqW1Yv6Fco"
+                title="Démonstration du jeu"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen>
+              </iframe>
             </div>
           </div>
         </div>
 
         <div class="project-columns">
           <div class="content-block">
-            <h3>Concept</h3>
+            <h3>Le contexte</h3>
             <p>
-              Le joueur sélectionne et déplace des pièces composées de plusieurs cellules
-              afin de les positionner correctement sur un plateau.
+              Basé sur les règles et la mécanique d'un jeu réel, mais entièrement refondé graphiquement et scénariquement dans l'univers de la cité de Ciudalia du roman "Gagner la Guerre" de Jean-Philippe Jaworski.
+               Il ne s'agit pas ici de présenter les règles du jeu complexes, mais de montrer à quel point ce jeu à été un tournant dans ma manière de coder des jeux.
             </p>
           </div>
 
           <div class="content-block">
-            <h3>Architecture</h3>
+            <h3>Ce que j'ai développé</h3>
             <p>
-              Séparation de la logique de jeu, des objets représentant les pièces et de
-              l'interface graphique pour garder un code plus maintenable.
+              Tout d'abord, c'est la première fois ou j'ai coder une animation de lancer de dés, et cela est plus complexe qu'il n'y parait.<br>
+              Ensuite c'est un jeu ou je commence a enchâiner les animation (déplacmeent de pion, de token,..). Pour eviter les chevauchement d'aniamations non désiré, il a fallu repenser ma manière de coder les relaitons
+               entre l'interface et le main. Et j'ai donc fait un manager d'animation que j'utilise et améliore depuis.
+               Enfin, n'téant dessinateur dans l'âme, j'ai progressé dans les prompts de générations d'image par IA.
             </p>
           </div>
 
           <div class="content-block">
-            <h3>Difficultés techniques</h3>
+            <h3>Points techniques</h3>
             <ul>
-              <li>Sélection d'une pièce avec la souris</li>
-              <li>Déplacement cohérent de formes multi-cases</li>
-              <li>Détection des collisions et limites du plateau</li>
-              <li>Gestion des images Tkinter et rafraîchissement du canvas</li>
+              <li>Introduction d'un Manager d'animations</li>
+              <li>Codage de nombreuses animation utiles dans tous les jeux</li>
+              <li>Introduction d'une dynamique de jeu plus fluide</li>
+              
             </ul>
           </div>
 
           <div class="content-block">
-            <h3>Ce que j'ai appris</h3>
+            <h3>Ce que le projet démontre</h3>
             <p>
-              Structuration d'un système interactif, gestion d'état, événements souris,
-              coordonnées écran/grille et débogage d'une interface graphique complexe.
+              Ma capacité a réevaluer et réfléchir à ma manière de penser et de coder
             </p>
           </div>
-        </div>
-
-        <div class="project-links">
-          <a class="btn btn-primary" href="https://github.com/" target="_blank" rel="noreferrer">Voir le code GitHub ↗</a>
         </div>
       </article>
 
-      <article class="project-detail reveal">
+
+
+
+
+
+
+      <article class="project-detail reveal" id="Atlantide">
         <div class="project-detail-head">
           <div>
-            <p class="project-number">GAME 02</p>
-            <h2>Pipe Puzzle</h2>
+            <p class="game-number">JEU 03</p>
+            <h2>Atlantide</h2>
             <p class="lead">
-              Un puzzle reposant sur la rotation d'éléments et la vérification automatique
-              d'une configuration gagnante.
+              Mon premier jeu codé en 3D avec des interfaces multiples.
             </p>
           </div>
           <div class="tags large-tags">
-            <span>Python</span><span>Tkinter</span><span>Logique</span>
+            <span>Python</span><span>Pandas</span><span>Tkinter</span><span>Matplotlib</span>
           </div>
         </div>
 
-        <div class="video-shell compact-video">
+        <div class="video-shell">
+          <div class="video-label">VIDÉO DE DÉMONSTRATION</div>
           <div class="video-placeholder">
-            <div><strong>▶</strong><p>Ajoute ici une vidéo du puzzle</p></div>
+            <div>
+              <iframe
+                src="https://www.youtube.com/embed/5xK-WLdO37c"
+                title="Démonstration du jeu"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen>
+              </iframe>
+            </div>
           </div>
         </div>
 
         <div class="project-columns">
-          <div class="content-block"><h3>Gameplay</h3><p>Explique ici le principe du puzzle et la règle de victoire.</p></div>
-          <div class="content-block"><h3>Algorithme</h3><p>Présente la logique de rotation, les connexions et la vérification de solution.</p></div>
-          <div class="content-block"><h3>Interface</h3><p>Montre comment les clics, images et états du plateau sont gérés.</p></div>
-          <div class="content-block"><h3>Améliorations</h3><p>Décris les fonctionnalités que tu aimerais ajouter.</p></div>
+          <div class="content-block">
+            <h3>Le contexte</h3>
+            <p>
+              Atlantide fait partie de l'excellente série de casse-tête édité par Smart Game. Pour chaque puzzle on dispose de pièces avec des esclaiers, des tunnels,.. que l'on doit placer judicieusement
+               et même parfois superposer pour créer un chemin entre l'accès au plateau et le clocher au sommet de la pièce maîtresse.
+            </p>
+          </div>
+
+          <div class="content-block">
+            <h3>Ce que j'ai développé</h3>
+            <p>
+              C'est le premier jeu que je code en 3D et j'ai utilsé  la librairie PyVista, couplé pendant le développemtn à une interface Tkinter.
+              J'ai moi-même conçu non sans mal le plateau et les pièces fidèles au jeu original avec Blender, ce qui a été pour moi l'occasion d'apprendre à utiliser ce genre de logiciel. 
+
+            </p>
+          </div>
+
+          <div class="content-block">
+            <h3>Points techniques</h3>
+            <ul>
+              <li>Conception de pièces 3D avec Blender</li>
+              <li>Apprentissage de la librairie Pyvista</li>
+              <li>Résoudre des problèmes que je n'avais pas en 2D</li>
+              
+            </ul>
+          </div>
+
+          <div class="content-block">
+            <h3>Ce que le projet démontre</h3>
+            <p>
+              Ma capcité à trouver des solutions externes à Python pour parvenir à mes objectifs.
+            </p>
+          </div>
         </div>
       </article>
+
+      
+      
+
+
+
+
+      <article class="project-detail reveal" id="Survive">
+        <div class="project-detail-head">
+          <div>
+            <p class="game-number">JEU 04</p>
+            <h2>Survive</h2>
+            <p class="lead">
+              Mon premier jeu entièrement pensé et conçu par moi. C'est un jeux de gestion de ressources et de relations diplomatiques
+            </p>
+          </div>
+          <div class="tags large-tags">
+            <span>Python</span><span>Pandas</span><span>Tkinter</span><span>Matplotlib</span>
+          </div>
+        </div>
+
+        <div class="video-shell">
+          <div class="video-label">VIDÉO DE DÉMONSTRATION</div>
+          <div class="video-placeholder">
+            <div>
+              <iframe
+                src="https://www.youtube.com/embed/iiz2h0Pj0dA"
+                title="Démonstration du jeu"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen>
+              </iframe>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-columns">
+          <div class="content-block">
+            <h3>Le contexte</h3>
+            <p>
+                J'ai toujours voulu coder mes propres jeu. Les jeux de gestions n'étais pas particulièrmeent ce à quoi je pensait d eprime abord, mais c'eest par hasard en regardant 
+                des vidéos de mécanique de ce genre de jeu que l'inspiration m'est venue. Il s'agiot d'un jeu de startégie, gestion de ressources et de relations diplomatiques, 
+                dans un monde post-apocalyptique. On gère une colonie d esurivant que l'on doit faire prospérer et survivre pendant +/- 10 jours selon la difficulté. ON construit des baitment, les améliore, on explore pour trouver des ressources, 
+                on tente de survivre aux assauts impitoyables d'ennemis chaque nuit, et on entretient des relaition diplomatiques avec les colonies voisines.
+            </p>
+          </div>
+
+          <div class="content-block">
+            <h3>Ce que j'ai développé</h3>
+            <p>
+              C'ets un jeu de gestion réaliste (bien que non optimisé à l'heure actuelle) ou il a fallu gérer les interactions entre es élement. PAr exmeple la météo influence sur le moral, la produciton électrique,...
+              Il a fallu créer la mécanique complexe des combat, de l'exploration, et des relations diplomatiques. Tout cela demandent un bonne organisation et segmentation du code. 
+              Il a falllu concevoir et intégrer les effets de cartes d'événements aléatoires. 
+            </p>
+          </div>
+
+          <div class="content-block">
+            <h3>Points techniques</h3>
+            <ul>
+              <li>Partir de 0 : passer de l'idée du jeu, aux règles, à la dynamique et enfin au développement </li>
+              <li>Création de mes propres mécaniques de jeu (combat, exploration,...)</li>
+              <li>Gestion des interactions complexes et des influences entre chaque élement du jeu</li>
+              <
+              
+            </ul>
+          </div>
+
+          <div class="content-block">
+            <h3>Ce que le projet démontre</h3>
+            <p>
+              Ma capacité à concrétiser mes idées et mes ébauches en un jeu développé complet et complexe. 
+            </p>
+          </div>
+        </div>
+      </article>
+
+
+
+
+
+
+
+
 
       <article class="project-detail reveal">
         <div class="project-detail-head">
