@@ -258,6 +258,73 @@
         </div>
       </article>
 
+      <article class="project-detail reveal" id="data_earth">
+        <div class="project-detail-head">
+          <div>
+            <p class="project-number">PROJET 04</p>
+            <h2>Projet Earth In Motion</h2>
+            <p class="lead">
+              Il s'agit d'un projet où j'ai voulu représenter des datasets varié sur un globe terrestre 3D
+            </p>
+          </div>
+          <div class="tags large-tags">
+            <span>PyQt5</span><span>PyVista</span><span>VTM</span>
+          </div>
+        </div>
+
+        <div class="video-shell">
+          <div class="video-label">VIDÉO DE DÉMONSTRATION</div>
+          <div class="video-placeholder">
+            <div>
+              <iframe
+                src="https://www.youtube.com/embed/kZuShijvluw"
+                title="Démonstration du projet"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen>
+              </iframe>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-columns">
+          <div class="content-block">
+            <h3>Le contexte</h3>
+            <p>
+              L'idée est de représenter des Dataset mondiaux avec des coordonnéees GPS sur un globe terrestre 3D avec des rotations de caméras et un zoom.
+              J'utilise un globe 3D intégré en exemple dans PyVista.
+            </p>
+          </div>
+
+          <div class="content-block">
+            <h3>Ce que j'ai développé</h3>
+            <p>
+              Les principales difficultés de ce projet ne concernent pas la data. Au lieu de Tkinter j'ai utilisé une interface plus moderne : PyQt5, la frame de rendu 3D est 
+              faite avec PyVista et le moteur graphique avec VTM. La prmeière étape et non la moindre a été de faire des rotations correctes qui bloquent les diagonales pour que ce soit plus intuitif et maniable. 
+              On détecte si l'on se dépace plutôt horizontalement ou verticalement et on déplace aors la caméra le long d'un parallèle ou d'un méridien terrestre. Pour l'instant seul le dataset des séismes 2026 à été 
+              intégré avec des filtres au mois, un filtre pour afficher les plaques tectoniques et une option de filtre d'un globe transparent avec les séismes projetés à leur profondeur réelle. Enfin chaque séisme
+               est cliquable pour ouvrir une fenêtre d'information. 
+            </p>
+          </div>
+
+          <div class="content-block">
+            <h3>Points techniques</h3>
+            <ul>
+              <li>Interface PyQT, Pyvista et moteur 3D VTM</li>
+              <li>Gestion maniable des rotations autour du globe terrestre</li>
+              <li>Afficher un dataset sur le globe (projection des coordonnées GPS)</li>
+              <li>Intégration de nombreux filtres</li>
+            </ul>
+          </div>
+
+          <div class="content-block">
+            <h3>Ce que le projet démontre</h3>
+            <p>
+              Ma capacité à apprendre de nouveaux concepts, outils et libraries Python pour arriver à mes fins. Ma capacité a utilisé des outils mathématiques complexe pour gérer les projection et la caméra. 
+            </p>
+          </div>
+        </div>
+      </article>
+
       
     </section>
 
