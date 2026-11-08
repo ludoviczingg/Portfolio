@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Projets scientifiques, simulations et algorithmes de Ludo Zingg.">
+  <title>Sciences & Algorithmes | Ludovic Zingg</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/script.js" defer></script>
+</head>
+<body>
+  <div class="noise"></div>
+
+  <header class="site-header">
+    <a class="brand" href="index.html"><span class="brand-mark">&gt;_</span><span>Ludovic Zingg</span></a>
+    <button class="menu-toggle" aria-label="Ouvrir le menu" aria-expanded="false">☰</button>
+    <nav class="main-nav">
+      <a href="index.html">Accueil</a>
+      <a href="data.html">Data</a>
+      <a class="active" href="sciences.html">Sciences</a>
+      <a href="jeux.html">Jeux</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="page-hero container reveal">
+      <p class="eyebrow">PORTFOLIO / SCIENCES</p>
+      <h1>Sciences <span class="accent">&</span> Algorithmes</h1>
+      <p>
+        Des projets pour comprendre, développer et vulgariser des phénomènes,
+        des algorithmes et des curiosités scientifiques.
+      </p>
+    </section>
+
+    <section class="section container" id="projets-sciences">
+      <div class="section-heading reveal">
+        <p class="eyebrow">SCIENCES & ALGORITHMES</p>
+        <h2>Comprendre, développer et vulgariser des phénomènes, algorithmes ou curiosités scientifiques complexes</h2>
+      </div>
+
+
+
+      <article class="project-detail reveal" id="science_electrostatique">
+        <div class="project-detail-head">
+          <div>
+            <p class="project-number">PROJET 01</p>
+            <h2>Laboratoire d'électrostatique</h2>
+            <p class="lead">
+              Petit laboratoire simulant le lancer de particules chargées dans un champ électrique.
+            </p>
+          </div>
+          <div class="tags large-tags">
+            <span>Python</span><span>Tkinter</span><span>Matplotlib</span>
+          </div>
+        </div>
+
+        <div class="video-shell">
+          <div class="video-label">VIDÉO DE DÉMONSTRATION</div>
+          <div class="video-placeholder">
+            <div>
+              <strong>▶</strong>
+              <iframe
+                src="https://www.youtube.com/embed/zeYHQWroYsc"
+                title="Démonstration du projet"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen>
+              </iframe>
+            </div>
+          </div>          
+        </div>
+
+        <div class="project-columns">
+          <div class="content-block">
+            <h3>Le contexte</h3>
+            <p>
+              Avec une interface tkinter on peut placer des charges électriques en visualisant les lignes de champs et les valeurs du champ a chaque point.
+              On peut aussi placer une autre particule chargée et lui donner une impulsion pour visualiser sa trajectoire dans le champ. 
+              Il est également possible d'intégrer un champ magnétique uniforme. C'est donc ici une application éducative.
+            </p>
+          </div>
+
+          <div class="content-block">
+            <h3>Ce que j'ai développé</h3>
+            <p>
+              J'ai utilisé l'interface tkinter. L'architecture choisie est de d'abord tout calculer avant d'animer. Cela permet de faire pause et de se promener sur la trajectoire pour visualiser les valeurs de force, et de vitesse,
+              et cela permet d'éviter de gérer les pas de temps de simulation et d'animation en même temps. 
+            </p>
+          </div>
+
+          <div class="content-block">
+            <h3>Points techniques</h3>
+            <ul>
+              <li>Apprentissage approfondi de la librairie math</li>
+              <li>Comprendre les problèmes liés aux singularités, qui numériquement provoquent des crashs</li>
+              <li>Décider de comment aborder la simulation d'un problème de physique complexe</li>
+            </ul>
+          </div>
+
+          <div class="content-block">
+            <h3>Ce que le projet démontre</h3>
+            <p>
+              Ma capacité à comprendre la théorie d'un phénomène physique complexe, le transcrire numériquement et l'intégrer à une interface interactive.
+            </p>
+          </div>
+        </div>
+
+      </article>
+
+
+
+      <article class="project-detail reveal" id="science_dijkstra">
+        <div class="project-detail-head">
+          <div>
+            <p class="project-number">PROJET 02</p>
+            <h2>Algorithme de Dijkstra</h2>
+            <p class="lead">
+              Animation de l'algorithme de Dijkstra pour visualiser son fonctionnement.
+            </p>
+          </div>
+          <div class="tags large-tags">
+            <span>Python</span><span>Tkinter</span><span>Matplotlib</span><span>Dijkstra</span>
+          </div>
+        </div>
+
+        <div class="video-shell">
+          <div class="video-label">VIDÉO DE DÉMONSTRATION</div>
+          <div class="video-placeholder">
+            <div>
+              <iframe
+                src="https://www.youtube.com/embed/jnQz3q_T3zA"
+                title="Démonstration du projet"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen>
+              </iframe>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-columns">
+          <div class="content-block">
+            <h3>Le contexte</h3>
+            <p>
+              L'algorithme de Dijkstra permet dans un réseau donné de trouver le chemin le plus court entre deux nœuds. Ce problème de complexité exponentielle devient particulièrement difficile sur de grands réseaux.
+              L'algorithme de Dijkstra est une manière de converger rapidement vers une solution. Les développeurs de jeux utilise des versions plus poussées et rapides (A* par exemple), mais l'idée ici est de comprendre 
+              le principe sous-jacent.     
+            </p>
+          </div>
+
+          <div class="content-block">
+            <h3>Ce que j'ai développé</h3>
+            <p>
+              J'ai d'abord développé un générateur de réseaux aléatoires entièrement réglable (nombre de nœuds, distance minimale entre nœuds, connectivité moyenne,...).
+              Après avoir créé mon interface tkinter j'ai ensuite codé l'algorithme. Là encore, on calcule à l'avance et ensuite on lance la simulation.
+              J'ai ensuite intégré aussi des vitesses limites sur chaque arête pour simuler un réseau routier ce qui permet aussi de simuler la recherche du chemin le plus court en temps.
+            </p>
+          </div>
+
+          <div class="content-block">
+            <h3>Points techniques</h3>
+            <ul>
+              <li>Apprentissage approfondi des graphes réseaux</li>
+              <li>Création du générateur de réseau plus complexe qu'il n'y paraît</li>
+              
+            </ul>
+          </div>
+
+          <div class="content-block">
+            <h3>Ce que le projet démontre</h3>
+            <p>
+              Ma capacité a varier mes sujets de développement, et à réfléchir à une interface facile d'utilisation.
+            </p>
+          </div>
+        </div>
+
+      </article>
+
+
+
+
+
+
+
+
+
+
+
+      <article class="project-detail reveal" id="science_aco">
+        <div class="project-detail-head">
+          <div>
+            <p class="project-number">PROJET 03</p>
+            <h2>Algorithme ACO (Ant Colony Optimization)</h2>
+            <p class="lead">
+              Animation de l'algorithme ACO pour la recherche de chemin le plus court dans un réseau.
+            </p>
+          </div>
+          <div class="tags large-tags">
+            <span>Python</span><span>Tkinter</span><span>Matplotlib</span><span>ACO</span>
+          </div>
+        </div>
+
+        <div class="video-shell">
+          <div class="video-label">VIDÉO DE DÉMONSTRATION</div>
+          <div class="video-placeholder">
+            <div>
+              <iframe
+                src="https://www.youtube.com/embed/nMDkdO_SHLk"
+                title="Démonstration du projet"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen>
+              </iframe>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-columns">
+          <div class="content-block">
+            <h3>Le contexte</h3>
+            <p>
+              Pour faire suite au projet précédent, on se propose ici de continuer à chercher le chemin le plus court dans un réseau , mais avec un algorithme original s'inspirant du vivant. 
+              L'algorithme ACO pour Ant Colony Optimization simule des lâchers de fourmis sur le réseau par itérations successives. 
+              À chaque nœud les fourmis peuvent emprunter une arête en fonction de plusieurs paramètres : la visibilité (distance au noeud opposé) et l'intensité des phéromones présentes. En effet, à chaque itération les fourmis déposent des phéromones pour guider les autres. 
+              Plus les fourmis empruntent une arête, plus il y aura de phéromones et plus cette arête sera privilégiée. A chaque itération les phéromones se dissipent en partie afin que les mauvais chemins ne soient plus renforcés. Enfin, un paramètre aléatoire permet aux fourmis
+               de quand même emprunter une autre arête afin de garantir qu'on explore toutes les possibilités.   
+            </p>
+          </div>
+
+          <div class="content-block">
+            <h3>Ce que j'ai développé</h3>
+            <p>
+              J'ai réutilisé l'interface tkinter du projet Dijkstra qui sert justement de référence pour juger la pertinence de l'ACO. Je réutilise aussi le générateur de réseau.
+              Les paramètres des fourmis étant difficiles à régler, j'ai codé non sans difficulté, un optimiseur qui permet de trouver les meilleurs paramètres. Ensuite on peut lancer l'animation en mode normal
+               ou l'on voit réellement les fourmis parcourir le réseau et déposer leurs phéromones à la fin de chaque itération. Comme ce procédé est lent, Je propose aussi un mode rapide sans l'animation des fourmis 
+            </p>
+          </div>
+
+          <div class="content-block">
+            <h3>Points techniques</h3>
+            <ul>
+              <li>L'optimiseur de paramètres (variations paramètres avec attribution de scores)</li>
+              <li>Gérer l'animation et la circulation de plus de 40 fourmis en même temps </li>
+              <li>Gérer les deux modes : normal et rapide </li>
+              
+            </ul>
+          </div>
+
+          <div class="content-block">
+            <h3>Ce que le projet démontre</h3>
+            <p>
+              Ma capacité à explorer, comparer et à aller en profondeur sur un même problème.
+            </p>
+          </div>
+        </div>
+
+      </article>
+
+
+
+
+
+
+      <article class="project-detail reveal" id="science_fourier">
+        <div class="project-detail-head">
+          <div>
+            <p class="project-number">PROJET 04</p>
+            <h2>Épicycles de Fourier </h2>
+            <p class="lead">
+              Visualisation originale des transformées de Fourier : les épicyles ; applications au dessin de formes
+            </p>
+          </div>
+          <div class="tags large-tags">
+            <span>Python</span><span>Tkinter</span><span>Transformée de Fourier</span>
+          </div>
+        </div>
+
+        <div class="video-shell">
+          <div class="video-label">VIDÉO DE DÉMONSTRATION</div>
+          <div class="video-placeholder">
+            <div>
+              <iframe
+                src="https://www.youtube.com/embed/AF8XSxRAhpI"
+                title="Démonstration du projet"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen>
+              </iframe>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-columns">
+          <div class="content-block">
+            <h3>Le contexte</h3>
+            <p>
+              Tous ceux qui ont fait des études de sciences ont été confrontés aux transformées de Fourier. Joseph Fourier a démontré que tout signal peut être décomposé en une somme
+              de signaux sinusoïdaux, ce  qui est très utile pour analyser de quoi est fait un signal. On peut facilement transcrire ce principe au cercle (puisque les sinus et cosinus sont définis dans un cercle trigonométrique),
+              pour crééer des épicycles de Fourier. ET ainsi ont peux montrer qu'on peut dessiner n'importe quelle forme à partir de ces épicyles     
+            </p>
+          </div>
+
+          <div class="content-block">
+            <h3>Ce que j'ai développé</h3>
+            <p>
+              3 versions : la prmeeire permet de montrer le principe sur 3 formes simples définies (étoile, carré et coeur). La deuxième version permet à l'utilisateur de dessiner sa propre forme et de voir les épicycles la dessiner.
+              La troisième version permet de charger une image quelconque, de dessiner son contour et de voir les épicycles le tracer. 
+            </p>
+          </div>
+
+          <div class="content-block">
+            <h3>Points techniques</h3>
+            <ul>
+              <li>Revoir et assimiler la théorie</li>
+              <li>Concevoir le 'moteur' principal de l'animation</li>
+              <li>l'appliquer aux 3 versions du projet</li>
+              
+            </ul>
+          </div>
+
+          <div class="content-block">
+            <h3>Ce que le projet démontre</h3>
+            <p>
+              Ma capacité a vulgariser et rendre ludique une théorie scientifique complexe 
+            </p>
+          </div>
+        </div>
+
+      </article>
+
+
+
+
+      <article class="project-detail reveal" id="science_modulaire">
+        <div class="project-detail-head">
+          <div>
+            <p class="project-number">PROJET 05</p>
+            <h2>Tables de multiplication modulaires </h2>
+            <p class="lead">
+              Visualisation originale des tables de multiplication en algèbre modulaire, sur un cercle.
+            </p>
+          </div>
+          <div class="tags large-tags">
+            <span>Python</span><span>Tkinter</span>
+          </div>
+        </div>
+
+        <div class="video-shell">
+          <div class="video-label">VIDÉO DE DÉMONSTRATION</div>
+          <div class="video-placeholder">
+            <div>
+              <iframe
+                src="https://www.youtube.com/embed/Xhf4yG3TGS8"
+                title="Démonstration du projet"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen>
+              </iframe>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-columns">
+          <div class="content-block">
+            <h3>Le contexte</h3>
+            <p>
+              On se rappelle tous les heures passées à apprendre les tables de multiplication. Je propose ici une visualisation graphique "hypnotique" des tables sur un cercle en utilisant le modulo. 
+              C'est en regardant une vidéo dédiée de Mickaël Launay célèbre youtubeur de l'excellente chaîne MicMaths que j'ai eu envie de ce petit projet   
+            </p>
+          </div>
+
+          <div class="content-block">
+            <h3>Ce que j'ai développé</h3>
+            <p>
+              Sur une interface tkinter sobre avec un menu permettant de régler les paramètres et un cercle dessiné en gros. On choisit un modulo "m" qui définit le nombre de points sur le contour
+               du cercle. On choisit une valeur de table initiale "n", par exemple 2 et on trace la table de 2 modulo m (explication dans la vidéo). Puis l'animation fait varier n à une vitesse réglable,
+               montrant une succession de table de n modulo m aux formes originales. 
+            </p>
+          </div>
+
+          <div class="content-block">
+            <h3>Points techniques</h3>
+            <ul>
+              <li>Comprendre et utiliser d'autres palettes de couleur Python</li>
+              <li>Peu de difficultés par ailleurs, en réutilisant des interfaces maintes fois réutilisées.</li>
+                            
+            </ul>
+          </div>
+
+          <div class="content-block">
+            <h3>Ce que le projet démontre</h3>
+            <p>
+              Ma capacité a vulgariser et rendre ludique une curiosité mathématique
+            </p>
+          </div>
+        </div>
+
+      </article>
+
+
+
+
+
+      <article class="project-detail reveal" id="science_epidemie">
+        <div class="project-detail-head">
+          <div>
+            <p class="project-number">PROJET 06</p>
+            <h2>Propagation d'Épidémie</h2>
+            <p class="lead">
+              Visualisation d'une propagation d'épidémie en utilisant le modèle SIR, en utilisant l'interface Pygame.
+            </p>
+          </div>
+          <div class="tags large-tags">
+            <span>Python</span><span>Pygame</span><span>Modèle SIR</span>
+          </div>
+        </div>
+
+        <div class="video-shell">
+          <div class="video-label">VIDÉO DE DÉMONSTRATION</div>
+          <div class="video-placeholder">
+            <div>
+              <iframe
+                src="https://www.youtube.com/embed/mLRB4E0aaLs"
+                title="Démonstration du projet"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen>
+              </iframe>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-columns">
+          <div class="content-block">
+            <h3>Le contexte</h3>
+            <p>
+              le modèle SIR (acronyme de Susceptible, Infected, Recovered) est le modèle basique de propagation d'épidémie. 
+              Dans cette version simplifiée, sans geste barrière, isolation des malades ou mode de transmission, on visualise déjà la croissance exponentielle
+               caractéristique de beaucoup d'épidémies virale, du nombre d'infectés.  
+            </p>
+          </div>
+
+          <div class="content-block">
+            <h3>Ce que j'ai développé</h3>
+            <p>
+              C'est dans ce projet que j'ai utilisé l'interface Pygame pour la première fois, d'où la sobriété manifeste de l'interface codée;
+              Au départ seules des personnes saines (susceptibles d'attraper la maladie) se promène aléatoirement et à vitesse aléatoire dans 
+              le champ dédié de l'interface. Puis un premier infecté apparaît. Chaque infecté à une zone circulaire autour de lui avec une probabilité de transmettre
+              la maladie a toute personne saine entrant dans cette zone.L'infecté peut alor soit décéder ou survivre devenant ainsi immunisé un certain temps. 
+              La grosse difficulté à été de trouver un moyen plus rapide et moins lourd de regarder a chaque frame de l'animation si des personnes entre dans la zone d'infectés 
+              pour éviter que le FPS global ne tombe a zéro et que l'animation s'arrête.    
+            </p>
+          </div>
+
+          <div class="content-block">
+            <h3>Points techniques</h3>
+            <ul>
+              <li>Appréhender le code et les règles d'une nouvelle interface : Pygame</li>
+              <li>Appréhender la théorie du modèle SIR</li>
+              <li>Difficulté a gérer le FPS. Déploiement d'une strégie de vérification des nouveaux infectés à chaque frame</li>
+                            
+            </ul>
+          </div>
+
+          <div class="content-block">
+            <h3>Ce que le projet démontre</h3>
+            <p>
+              Ma capacité à apprendre de nouvelles interfaces et librairies, pour s'adapter au projet souhaité.
+            </p>
+          </div>
+        </div>
+
+      </article>
+
+      
+
+    </section>
+  </main>
+  <footer class="site-footer container">
+    <p>© <span id="year"></span> Ludovic Zingg — Portfolio Data & Python</p>
+    <div><a href="index.html">Accueil</a><a href="contact.html">Contact</a></div>
+  </footer>
+</body>
+</html>
