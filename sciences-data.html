@@ -360,9 +360,9 @@
             <h3>Le contexte</h3>
             <p>
               Passionné de randonnée en montagne, j'ai toujours voulu pouvoir visualiser les topos de randonnées en relief, pour mieux appréhender les difficultées.
-              Il s'agit donc ici de pouvoir représenter un relief 3D d'une zone française définie par des coorodnnées GPS. On peut ensuite télécharger des traces GPX
-              de randonnées via les sites spécialisées et les visualiser sur le relief. Enfin, l'utilisateur peut placer de marqueurs de point d'intérêt, de danger, 
-              de commentaire et même des photos. 
+              Il s'agit donc ici de pouvoir représenter un relief 3D d'une zone française définie par des coordonnées GPS. On peut ensuite télécharger des traces GPX
+              de randonnées via les sites spécialisées et les visualiser sur le relief. Enfin, l'utilisateur peut placer des marqueurs de points d'intérêts, de dangers, 
+              de commentaires et même des photos. 
             </p>
           </div>
 
@@ -371,9 +371,9 @@
             <p>
               L'interface 3D est Pyvista intégré dans l'interface PyQT, avec des contrôles de caméra orbitaux. Le relief d'une zone donnée (en km) est généré à partir 
               de relevés altimétriques téléchargés depuis l'API du site DataGouv. Pour atteindre une résolution de 5m2 par pixel, il a fallu pour limiter les temps de
-               téléchargements, utiliser un autre site qui pemret d'obtenir des dalles complète par département. Un algorithme permet alors, de parcourir les dalles pour
-                sélectionner les relevés pertinents pour la zone. Par défaut, un carte IGN au 1:50000 ème téléchargée via l'api, est mappée sur le rleief. Mais on peut
-                 également mappé des vues aériennes comme google.  
+               téléchargements, utiliser un autre site qui permet d'obtenir des dalles complètes par département. Un algorithme permet alors, de parcourir les dalles pour
+                sélectionner les relevés pertinents pour la zone. Par défaut, un carte IGN au 1:50000 ème téléchargée via l'API, est mappée sur le relief. Mais on peut
+                 également mapper des vues aériennes comme google.  
             </p>
           </div>
 
@@ -397,6 +397,73 @@
       </article>
 
       
+
+      <article class="project-detail reveal" id="data_neural_network">
+        <div class="project-detail-head">
+          <div>
+            <p class="project-number">PROJET 06</p>
+            <h2>Projet Deep Smart Mind</h2>
+            <p class="lead">
+              Il s'agit d'une application en anglais visant à vulgariser le fonctionnement des réseaux de neurones artificiels
+               en Deep Learning.
+            </p>
+          </div>
+          <div class="tags large-tags">
+            <span>Tkinter</span><span>Data</span><span>ML</span><span>IA</span>
+          </div>
+        </div>
+
+        <div class="video-shell">
+          <div class="video-label">VIDÉO DE DÉMONSTRATION</div>
+          <div class="video-placeholder">
+            <div>
+              <iframe
+                src="https://www.youtube.com/embed/0CudbNiaBCM"
+                title="Démonstration du projet"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen>
+              </iframe>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-columns">
+          <div class="content-block">
+            <h3>Le contexte</h3>
+            <p>
+              L'IA fascine, beaucoup on entendu parler de réseaux de neurone, mais peu savent comment cela fonctionne. Cette application ambitionne
+              d'introduire les concepts de base d'un neurone artificiel, comment il fonctionne, et comment les mettres en réseaux par couches, afin 
+              de leur faire "apprendre". Je propose à partir de Datasets clairs et simples d'introduire progressivement les concepts, en complexifiant 
+              petit à petit pour aboutir à un vrai réseau profond .
+            </p>
+          </div>
+
+          <div class="content-block">
+            <h3>Ce que j'ai développé</h3>
+            <p>
+               Toujours en cours de développement, le premier dataset proposé permet d'illustrer le fonctionnement du perceptron (1 seul neurone), montrer 
+               comment il est capable durant son apprentissage, d'apprendre à reconnaître des plantes toxiques. Une classification binaire donc, avec deux features 
+               en entrée. Une animation permet de visualiser à chaque itération de l'apprentissage, les valeurs en entrée et en sortie, la convergence de la descente 
+               de gradient et l'évolution de la fonction de coût.
+            </p>
+          </div>
+
+          <div class="content-block">
+            <h3>Points techniques</h3>
+            <ul>
+              <li>Gérer les différents modèles, les options mises à disposition</li>
+              <li>Gérer un visuel et une animation clairs</li>
+            </ul>
+          </div>
+
+          <div class="content-block">
+            <h3>Ce que le projet démontre</h3>
+            <p>
+              Ma capacité à vulgariser un processus mathématique complexe.  
+            </p>
+          </div>
+        </div>
+      </article>
 
       
 
@@ -704,76 +771,7 @@
       </article>
 
 
-      <article class="project-detail reveal" id="data_neural_network">
-        <div class="project-detail-head">
-          <div>
-            <p class="project-number">PROJET 06</p>
-            <h2>Projet Deep Smart Mind</h2>
-            <p class="lead">
-              Il s'agit d'une application en anglais visant à vulgariser le fonctionnement des réseaux de neurones artificiels
-               en Deep Learning.
-            </p>
-          </div>
-          <div class="tags large-tags">
-            <span>Tkinter</span><span>Data</span><span>ML</span><span>IA</span>
-          </div>
-        </div>
 
-        <div class="video-shell">
-          <div class="video-label">VIDÉO DE DÉMONSTRATION</div>
-          <div class="video-placeholder">
-            <div>
-              <iframe
-                src="https://www.youtube.com/embed/0CudbNiaBCM"
-                title="Démonstration du projet"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen>
-              </iframe>
-            </div>
-          </div>
-        </div>
-
-        <div class="project-columns">
-          <div class="content-block">
-            <h3>Le contexte</h3>
-            <p>
-              L'IA fascine, beaucup on entendu parler de réseaux d eneurone, mais peu savent comment cela fonctionne. Cette application ambitionne
-              d'introduire les concepts de base d'un neurone artificiel, comment il fonctionne, et comment les mettres en réseaux par couches, afin 
-              de leur faire "apprendre". Je propose à partir de Datasets clairs et simples d'introduire progressivement les concepts, en complexifiant 
-              petit à petit pour aboutir à un vrai réseau profond .
-            </p>
-          </div>
-
-          <div class="content-block">
-            <h3>Ce que j'ai développé</h3>
-            <p>
-               Toujours en cours de développement, le premier dataset proposé permet d'illustrer le fonctionnement du perceptron (1 seul neurone), montrer 
-               comment il est capable durant son apprentissage, d'apprendre à reconnaître des plantes toxiques. Une classification binaire donc, avec deux features 
-               en entrée. Une animation permet de visualiser à chaque itération de l'apprentissage, les valeurs en entrée et en sortie, la convergence de la descente 
-               de gradient et l'évolution de la fonction de coût.
-            </p>
-          </div>
-
-          <div class="content-block">
-            <h3>Points techniques</h3>
-            <ul>
-              <li>Gérer les différents modèles, les options mises à disposition</li>
-              <li>Gérer un visuel et une animation clairs</li>
-            </ul>
-          </div>
-
-          <div class="content-block">
-            <h3>Ce que le projet démontre</h3>
-            <p>
-              Ma capacité à vulgariser un processus mathématique complexe.  
-            </p>
-          </div>
-        </div>
-      </article>
-
-
-      
-      
 
       <article class="project-detail reveal" id="sciences">
         <div class="project-detail-head">
