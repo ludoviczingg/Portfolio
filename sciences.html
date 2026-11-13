@@ -9,7 +9,9 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/project-timeline.css">
   <script src="js/script.js" defer></script>
+  <script src="js/project-timeline.js" defer></script>
 </head>
 <body>
   <div class="noise"></div>
@@ -35,6 +37,16 @@
         des algorithmes et des curiosités scientifiques.
       </p>
     </section>
+
+    <!-- Frise de navigation des projets : les liens sont générés automatiquement -->
+    <nav class="project-timeline" aria-label="Navigation dans les projets">
+      <div class="project-timeline-heading">
+        <span class="project-timeline-kicker">SUR CETTE PAGE</span>
+        <strong>Frise des projets</strong>
+      </div>
+      <ol class="project-timeline-list"></ol>
+    </nav>
+
 
     <section class="section container" id="projets-sciences">
       <div class="section-heading reveal">

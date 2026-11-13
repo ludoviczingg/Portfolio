@@ -1,0 +1,249 @@
+/*
+ * Frise de navigation des projets
+ * Utilisée par data.html, sciences.html et jeux.html
+ */
+
+.project-timeline {
+    --timeline-accent: var(--cyan, #55d8f2);
+    --timeline-muted: var(--muted, #9aabc0);
+    --timeline-panel: rgba(7, 18, 33, 0.96);
+
+    position: fixed;
+    z-index: 40;
+    top: 50%;
+    right: max(18px, calc((100vw - 1200px) / 2 - 198px));
+    transform: translateY(-50%);
+    width: 178px;
+    max-height: min(72vh, 700px);
+    overflow-y: auto;
+    padding: 16px 12px 14px;
+    color: var(--text, #edf5ff);
+    background: var(--timeline-panel);
+    border: 1px solid var(--line, rgba(115, 157, 194, 0.25));
+    border-radius: 16px;
+    box-shadow: 0 14px 40px rgba(0, 0, 0, 0.28);
+    backdrop-filter: blur(14px);
+    scrollbar-width: thin;
+    scrollbar-color: rgba(85, 216, 242, 0.35) transparent;
+}
+
+.project-timeline-heading {
+    display: grid;
+    gap: 4px;
+    margin: 0 4px 12px;
+}
+
+.project-timeline-kicker {
+    color: var(--timeline-accent);
+    font: 600 0.58rem/1.3 "JetBrains Mono", monospace;
+    letter-spacing: 0.12em;
+}
+
+.project-timeline-heading strong {
+    font-size: 0.9rem;
+    line-height: 1.3;
+}
+
+.project-timeline-list {
+    position: relative;
+    display: grid;
+    gap: 3px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.project-timeline-list::before {
+    content: "";
+    position: absolute;
+    top: 15px;
+    bottom: 15px;
+    left: 17px;
+    width: 1px;
+    background: linear-gradient(
+        to bottom,
+        transparent,
+        rgba(85, 216, 242, 0.45) 12%,
+        rgba(85, 216, 242, 0.25) 88%,
+        transparent
+    );
+}
+
+.project-timeline-link {
+    position: relative;
+    display: grid;
+    grid-template-columns: 28px minmax(0, 1fr);
+    align-items: start;
+    gap: 7px;
+    padding: 7px 5px;
+    color: var(--timeline-muted);
+    text-decoration: none;
+    border-radius: 8px;
+    transition: color 180ms ease, background 180ms ease, transform 180ms ease;
+}
+
+.project-timeline-index {
+    position: relative;
+    z-index: 1;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 25px;
+    min-height: 22px;
+    color: var(--timeline-accent);
+    background: #0b1b30;
+    border: 1px solid rgba(85, 216, 242, 0.25);
+    border-radius: 7px;
+    font: 600 0.62rem/1 "JetBrains Mono", monospace;
+}
+
+.project-timeline-label {
+    padding-top: 2px;
+    font-size: 0.69rem;
+    line-height: 1.35;
+    overflow-wrap: anywhere;
+}
+
+.project-timeline-link:hover {
+    color: var(--text, #edf5ff);
+    background: rgba(85, 216, 242, 0.08);
+    transform: translateX(2px);
+}
+
+.project-timeline-link.is-active {
+    color: var(--text, #edf5ff);
+    background: rgba(85, 216, 242, 0.11);
+}
+
+.project-timeline-link.is-active .project-timeline-index {
+    color: #061522;
+    background: var(--timeline-accent);
+    border-color: var(--timeline-accent);
+    box-shadow: 0 0 14px rgba(85, 216, 242, 0.28);
+}
+
+.project-detail[id] {
+    scroll-margin-top: 105px;
+}
+
+/*
+ * Sur les écrans plus étroits, la frise devient une barre horizontale
+ * défilante au-dessus des projets pour ne pas recouvrir le contenu.
+ */
+@media (max-width: 1639px) {
+    .project-timeline {
+        position: sticky;
+        top: 82px;
+        transform: none;
+        width: min(calc(100% - 32px), 1180px);
+        max-width: 1180px;
+        max-height: none;
+        margin: 0 auto 22px;
+        padding: 10px 13px 9px;
+        border-radius: 13px;
+    }
+
+    .project-timeline-heading {
+        display: flex;
+        align-items: baseline;
+        gap: 9px;
+        margin: 0 2px 7px;
+    }
+
+    .project-timeline-heading strong {
+        font-size: 0.78rem;
+    }
+
+    .project-timeline-list {
+        display: flex;
+        gap: 7px;
+        width: 100%;
+        overflow-x: auto;
+        padding: 1px 1px 5px;
+        scrollbar-width: thin;
+        scrollbar-color: rgba(85, 216, 242, 0.35) transparent;
+    }
+
+    .project-timeline-list::before {
+        display: none;
+    }
+
+    .project-timeline-list li {
+        flex: 0 0 auto;
+        max-width: 230px;
+    }
+
+    .project-timeline-link {
+        display: flex;
+        align-items: center;
+        gap: 7px;
+        height: 100%;
+        padding: 7px 9px;
+        background: rgba(255, 255, 255, 0.025);
+        border: 1px solid rgba(115, 157, 194, 0.13);
+        transform: none;
+    }
+
+    .project-timeline-link:hover {
+        transform: translateY(-1px);
+    }
+
+    .project-timeline-index {
+        flex: 0 0 auto;
+        width: 23px;
+        min-height: 21px;
+    }
+
+    .project-timeline-label {
+        padding: 0;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        font-size: 0.72rem;
+    }
+}
+
+@media (max-width: 650px) {
+    .project-timeline {
+        top: 70px;
+        width: calc(100% - 20px);
+        margin-bottom: 17px;
+        padding: 9px 10px 7px;
+    }
+
+    .project-timeline-kicker {
+        font-size: 0.53rem;
+    }
+
+    .project-timeline-heading strong {
+        font-size: 0.73rem;
+    }
+
+    .project-timeline-list {
+        gap: 5px;
+    }
+
+    .project-timeline-list li {
+        max-width: 190px;
+    }
+
+    .project-timeline-link {
+        gap: 6px;
+        padding: 6px 7px;
+    }
+
+    .project-timeline-label {
+        max-width: 145px;
+        font-size: 0.67rem;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .project-timeline-link {
+        transition: none;
+    }
+
+    html {
+        scroll-behavior: auto;
+    }
+}
