@@ -1711,3 +1711,57 @@ img {
         flex-direction: column;
     }
 }
+
+/* =========================================================
+   BANDEAU ILLUSTRÉ
+   ========================================================= */
+
+.top-banner {
+    position: relative;
+    width: 100%;
+    height: clamp(160px, 22vw, 245px);
+    margin: 25px auto 0;
+    overflow: hidden;
+    border: 1px solid var(--line);
+    border-radius: 18px;
+    box-shadow: var(--shadow);
+}
+
+.top-banner img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+/* Fondu léger en bas du bandeau */
+.top-banner::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+        to bottom,
+        transparent 60%,
+        rgba(6, 16, 29, 0.3)
+    );
+    pointer-events: none;
+}
+
+/* Réduction de l'espace avant le titre */
+.top-banner + .hero {
+    padding-top: 40px;
+}
+
+/* Version mobile */
+@media (max-width: 650px) {
+    .top-banner {
+        height: 125px;
+        margin-top: 15px;
+        border-radius: 12px;
+    }
+
+    .top-banner + .hero {
+        padding-top: 30px;
+    }
+}
