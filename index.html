@@ -9,6 +9,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/skills-orbits.css">
   <script src="js/script.js" defer></script>
 </head>
 <body>
@@ -77,9 +78,9 @@
         <span class="code-green">"Pandas"</span>,
         <span class="code-green">"SQL"</span>,
         <span class="code-green">"Data Viz"</span>,
-        <span class="code-green">"Data Warehouse"</span>
-        <span class="code-green">"Machine Learning"</span>
-        <span class="code-green">"Algorithmique"</span>        
+        <span class="code-green">"Data Warehouse"</span>,
+        <span class="code-green">"Machine Learning"</span>,
+        <span class="code-green">"Algorithmique"</span>,        
         <span class="code-green">"Interface Graphique"</span>
     ]
 
@@ -122,10 +123,92 @@
           </p>
         </div>
 
-        <div class="skills-card">
-          <span>Python</span><span>Pandas</span><span>NumPy</span><span>NetworkX</span><span>Matplotlib</span><span>ScikitLearn</span>
-          <span>Tkinter</span><span>Pyvista</span><span>PyQt</span><span>BDD-SQL</span><span>Excel</span><span>Power BI</span><span>POO</span>
-          <span>Git/Github</span><span>Analyse statistique</span><span>Algorithmique</span><span>Data Warehouse</span><span>Conception d'Appli</span>
+        <div class="skills-orbits">
+
+          <!-- PÔLE 1 : PYTHON -->
+          <article class="skill-orbit-card python-orbit">
+            <div class="skill-orbit-heading">
+              <span class="skill-orbit-number">01</span>
+              <div>
+                <h3>Écosystème Python</h3>
+                <p>Développement & bibliothèques</p>
+              </div>
+            </div>
+
+            <div class="skill-orbit" aria-label="Compétences Python disposées autour du cercle">
+              <span class="skill-orbit-center">
+                <strong>PYTHON</strong>
+                <small>ÉCOSYSTÈME</small>
+              </span>
+              <span class="orbit-skill" style="--angle: 0deg">Pandas</span>
+              <span class="orbit-skill" style="--angle: 45deg">NumPy</span>
+              <span class="orbit-skill" style="--angle: 90deg">NetworkX</span>
+              <span class="orbit-skill" style="--angle: 135deg">Matplotlib</span>
+              <span class="orbit-skill" style="--angle: 180deg">Scikit-learn</span>
+              <span class="orbit-skill" style="--angle: 225deg">Tkinter</span>
+              <span class="orbit-skill" style="--angle: 270deg">PyVista</span>
+              <span class="orbit-skill" style="--angle: 315deg">PyQt</span>
+            </div>
+
+            <div class="skill-orbit-footer">
+              <span>POO</span>
+              <span>Algorithmique</span>
+              <span>Git / GitHub</span>
+              <span>Conception d'applications</span>
+            </div>
+          </article>
+
+          <!-- PÔLE 2 : DATA -->
+          <article class="skill-orbit-card data-orbit">
+            <div class="skill-orbit-heading">
+              <span class="skill-orbit-number">02</span>
+              <div>
+                <h3>Compétences Data</h3>
+                <p>Analyse, structuration & restitution</p>
+              </div>
+            </div>
+
+            <div class="skill-orbit" aria-label="Compétences Data disposées autour du cercle">
+              <span class="skill-orbit-center">
+                <strong>DATA</strong>
+                <small>ANALYSE</small>
+              </span>
+              <span class="orbit-skill" style="--angle: 0deg">SQL / BDD</span>
+              <span class="orbit-skill" style="--angle: 60deg">Excel</span>
+              <span class="orbit-skill" style="--angle: 120deg">Power BI</span>
+              <span class="orbit-skill" style="--angle: 180deg">Analyse statistique</span>
+              <span class="orbit-skill" style="--angle: 240deg">Data Warehouse</span>
+              <span class="orbit-skill" style="--angle: 300deg">Data Viz</span>
+            </div>
+
+            <p class="skill-orbit-note">De la donnée brute à l'information exploitable.</p>
+          </article>
+
+          <!-- PÔLE 3 : SOFT SKILLS -->
+          <article class="skill-orbit-card soft-orbit">
+            <div class="skill-orbit-heading">
+              <span class="skill-orbit-number">03</span>
+              <div>
+                <h3>Soft skills</h3>
+                <p>Ma manière d'aborder les projets</p>
+              </div>
+            </div>
+
+            <div class="skill-orbit" aria-label="Qualités professionnelles disposées autour du cercle">
+              <span class="skill-orbit-center">
+                <strong>HUMAIN</strong>
+                <small>APPROCHE</small>
+              </span>
+              <span class="orbit-skill" style="--angle: 0deg">Curiosité</span>
+              <span class="orbit-skill" style="--angle: 72deg">Autonomie</span>
+              <span class="orbit-skill" style="--angle: 144deg">Polyvalence</span>
+              <span class="orbit-skill" style="--angle: 216deg">Esprit d'équipe</span>
+              <span class="orbit-skill" style="--angle: 288deg">Envie d'apprendre</span>
+            </div>
+
+            <p class="skill-orbit-note">Explorer, apprendre et avancer collectivement.</p>
+          </article>
+
         </div>
       </div>
     </section>
